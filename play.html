@@ -8,9 +8,72 @@
 <meta content="Happy gaming!" name="description">
 <!-- CSS -->
 <link rel="stylesheet" href="/user_css/home.css" />
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<!-- Boxicons CDN Link-->
+<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+    <div class="sidebar">
+        <div class="logo-details">
+            <div class="logo_name">Awoken's Games</div>
+            <i class='bx bx-menu' id="btn" ></i>
+        </div>
+        <ul class="nav-list">
+          <li>
+              <i class='bx bx-search' ></i>
+             <input type="text" placeholder="Search...">
+             <span class="tooltip">Search</span>
+          </li>
+          <li>
+            <a href="#">
+              <i class='bx bx-home-alt-2' ></i>
+              <span class="links_name">Home</span>
+            </a>
+             <span class="tooltip">Home</span>
+          </li>
+          <li>
+           <a href="#">
+            <i class='bx bx-bar-chart-alt-2' ></i>
+             <span class="links_name">Changelog</span>
+           </a>
+           <span class="tooltip">Changelog</span>
+         </li>
+         <li>
+           <a href="#">
+            <i class='bx bx-code-alt' ></i>
+             <span class="links_name">Developer</span>
+           </a>
+           <span class="tooltip">Developer</span>
+         </li>
+        </ul>
+      </div>
+      <script>
+      let sidebar = document.querySelector(".sidebar");
+      let closeBtn = document.querySelector("#btn");
+      let searchBtn = document.querySelector(".bx-search");
+    
+      closeBtn.addEventListener("click", ()=>{
+        sidebar.classList.toggle("open");
+        menuBtnChange();//calling the function(optional)
+      });
+    
+      searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+        sidebar.classList.toggle("open");
+        menuBtnChange(); //calling the function(optional)
+      });
+    
+      // following are the code to change sidebar button(optional)
+      function menuBtnChange() {
+       if(sidebar.classList.contains("open")){
+         closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+       }else {
+         closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+        }
+  }
+  </script>
+</body>
+</html>
+
 <div id="Featured">
 <div class="container">
 <div class="row">
@@ -113,6 +176,12 @@
 <a title="Sonic The Hedgehog" class="gc2" href="assets/gfiles/sonicthehedgehog/sth.html">
 <img alt="Sonic The Hedgehog" src="https://iili.io/XTW3MX.png">
 <h6>Sonic The Hedgehog</h6>
+</a>
+</div>
+<div class="col-md-2 col-sm-3 col-4">
+<a title="Craftmine" class="gc2" href="assets/gfiles/craftmine/craftmine.html">
+<img alt="Craftmine" src="https://iili.io/XlawGI.png">
+<h6>Craftmine</h6>
 </a>
 </div>
 </div>
