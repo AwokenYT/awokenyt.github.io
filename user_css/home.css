@@ -403,7 +403,7 @@ svg {
 body {
     min-height: 100vh;
     width: 100%;
-    overflow: hidden;
+    overflow: auto;
     background: #dadada url('https://iili.io/X0Mry7.png') repeat;
     /*background-color: #f3f7f7;*/
     font-size: 1.2rem;
@@ -1257,7 +1257,6 @@ override
     }
     body {
         margin-bottom: 100px;
-        overflow-y: auto
     }
     .col-md-5ths {
         width: 18%;
