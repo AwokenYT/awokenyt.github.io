@@ -8,15 +8,11 @@ body {
     font: 17px sans-serif;
     line-height: 1.25;
     color: #fff;
-    overflow-y: visible;
+    overflow: visible;
     background-color: #fff;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     text-size-adjust: 100%
-}
-
-::-webkit-scrollbar {
-    width: 0px
 }
 
 .fullscreen_button {
