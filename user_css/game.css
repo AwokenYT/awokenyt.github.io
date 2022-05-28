@@ -8,15 +8,18 @@ body {
     font: 17px sans-serif;
     line-height: 1.25;
     color: #fff;
-    overflow: hidden;
+    overflow-y: visible;
     background-color: #fff;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     text-size-adjust: 100%
 }
 
+::-webkit-scrollbar {
+    width: 0px
+}
+
 .fullscreen_button {
-    position: absolute;
     background-color: #555555;
     border: none;
     color: white;
@@ -30,8 +33,6 @@ body {
     -webkit-transition-duration: 0.4s;
     /* Safari */
     transition-duration: 0.4s;
-    top: 50rem;
-    left: 54rem;
 }
 
 .fullscreen_button {
