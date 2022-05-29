@@ -43,24 +43,15 @@ body {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+    top: 7%;
     opacity: 0.5;
     -webkit-transition-duration: 0.4s;
     /* Safari */
     transition-duration: 0.4s;
 }
 
-.controls_button {
-    top: 88%;
-    right: 25%;
-}
-
 .controls_button:hover {
     opacity: 1
-}
-
-.fullscreen_button {
-    top: 88%;
-    right: 22%;
 }
 
 .fullscreen_button:hover {
