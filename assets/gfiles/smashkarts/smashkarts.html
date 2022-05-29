@@ -2,12 +2,12 @@
 <html>
 
 <head>
-    <title>Awoken's Games | Pokemon Ruby</title>
+    <title>Awoken's Games | Smash Karts</title>
     <meta charset="utf-8">
     <meta content='width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1' name='viewport' />
     <meta content='no-referrer' name='referrer' />
-    <meta content="Awoken's Games | Pokemon Ruby" name="description">
-    <link rel="shortcut icon" href="https://iili.io/XV9Js4.png">
+    <meta content="Awoken's Games | Smash Karts" name="description">
+    <link rel="shortcut icon" href="https://iili.io/XXtNov.png">
     <!-- CSS -->
     <link rel="stylesheet" href="/user_css/game.css" />
 </head>
@@ -17,11 +17,8 @@
     </div>
     <section class="content">
         <img class="fullscreen_button" src="https://iili.io/XXAAVj.png" width="35" height="35" onclick="openFullscreen();" />
-        <img class="controls_button" src="https://iili.io/XXRVp9.png" width="50" height="50" onclick="tellControls()" />
-        <iframe id="mygame" sandbox="allow-scripts allow-same-origin" scrolling="no" frameborder="0" src="https://awokenyt.github.io/gamestorage/gbagames/launcher.html#pokemonruby" style="border-radius: 1%; height: 600px; width: 1067px;"></iframe>
+        <iframe id="mygame" sandbox="allow-scripts allow-same-origin" scrolling="no" frameborder="0" src="https://awokenyt.github.io/gamestorage/smashkarts/" style="border-radius: 1%; height: 600px; width: 1067px;"></iframe>
     </section>
-
-    <button class="fullscreen_button" onclick="openFullscreen()">Open in fullscreen</button>
     <script>
         var elem = document.getElementById("mygame");
 
@@ -33,10 +30,6 @@
             } else if (elem.msRequestFullscreen) { /* IE11 */
                 elem.msRequestFullscreen();
             }
-        }
-
-        function tellControls() {
-            alert("Start: Enter | Select: Shift | A: X | B: Z | L: 1 | R: 2 | D-Pad: Arrow keys.")
         }
     </script>
 </body>
