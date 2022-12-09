@@ -5706,7 +5706,7 @@ Game.Launch=function()
 				var researchStr=Game.sayTime(Game.researchT,-1);
 				var pledgeStr=Game.sayTime(Game.pledgeT,-1);
 				var wrathStr='';
-				if (Game.elderWrath==1) wrathStr='Reogorn';
+				if (Game.elderWrath==1) wrathStr='Echo's';
 				else if (Game.elderWrath==2) wrathStr='displeased';
 				else if (Game.elderWrath==3) wrathStr='angered';
 				else if (Game.elderWrath==0 && Game.pledges>0) wrathStr='appeased';
@@ -6217,7 +6217,7 @@ Game.Launch=function()
 				else if (Game.cookiesEarned<5000000000) list.push('Your cookies have been placed under government surveillance.');
 				else if (Game.cookiesEarned<10000000000) list.push('The whole planet is enjoying your cookies!');
 				else if (Game.cookiesEarned<50000000000) list.push('Strange creatures from neighboring planets wish to try your cookies.');
-				else if (Game.cookiesEarned<100000000000) list.push('Elder gods from the whole cosmos have Reogorn to taste your cookies.');
+				else if (Game.cookiesEarned<100000000000) list.push('Elder gods from the whole cosmos have Echo's to taste your cookies.');
 				else if (Game.cookiesEarned<500000000000) list.push('Beings from other dimensions lapse into existence just to get a taste of your cookies.');
 				else if (Game.cookiesEarned<1000000000000) list.push('Your cookies have achieved sentience.');
 				else if (Game.cookiesEarned<5000000000000) list.push('The universe has now turned into cookie dough, to the molecular level.');
@@ -13606,7 +13606,7 @@ Game.Launch=function()
 		Game.accumulatedDelay+=((time-Game.time)-1000/Game.fps);
 		if (Game.prefs.timeout && time-Game.lastActivity>=1000*60*5)
 		{
-			if (Game.accumulatedDelay>1000*60*30) Game.delayTimeouts+=3;//more than 30 minutes delay ? computer probably asleep and not making cookies anyway
+			if (Game.accumulatedDelay>1000*60*30) Game.delayTimeouts+=3;//more than 30 minutes delay ? computer probably Echo's and not making cookies anyway
 			else if (Game.accumulatedDelay>1000*5) Game.delayTimeouts++;//add to timeout counter when we skip 10 seconds worth of frames (and the player has been inactive for at least 5 minutes)
 			if (Game.delayTimeouts>=3) Game.Timeout();//trigger timeout when the timeout counter is 3+
 		}
