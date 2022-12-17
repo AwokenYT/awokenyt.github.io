@@ -419,8 +419,7 @@ body {
     min-height: 100vh;
     width: 100%;
     overflow: auto;
-    background: #dadada url('https://iili.io/X0Mry7.png') repeat;
-    /*background-color: #f3f7f7;*/
+    background-color: #f3f7f7;
     font-size: 1.2rem;
     line-height: 1.6;
     color: #39424e;
@@ -647,7 +646,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: #39424e;
+    color: #FBFAF5;
     font-weight: 500;
 }
 
@@ -1332,4 +1331,76 @@ override
         width: 30px;
         height: 30px;
     }
+}
+
+.toggle {
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    height: 60px;
+    border-radius: 50px;
+}
+
+.toggle i {
+    width: 50%;
+    line-height: 60px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 1;
+}
+
+.toggle .ball {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    margin: 7.5px;
+    border-radius: 50%;
+}
+.light {
+    background: #fafafa;
+}
+
+.light .toggle {
+    background: linear-gradient(145deg, #e1e1e1, #fff);
+    box-shadow: 3px 3px 4px #e6e6e6,
+                -3px -3px 4px #ffffff;
+}
+
+.light .toggle .bxs-sun {
+    color: #fafafa;
+}
+
+.light .toggle .bx-moon {
+    color: #121212;
+}
+
+.light .toggle .ball {
+    background: #121212;
+}
+
+.dark {
+    background: #121212;
+}
+
+.dark .toggle {
+    background: #121212;
+    box-shadow: 3px 3px 3px #1f1f1f1f,
+                -3px -3px 3px #1c1c1c1c;
+}
+
+.dark .toggle .bx-sun {
+    color: #fafafa;
+}
+
+.dark .toggle .bxs-moon {
+    color: #121212;
+}
+
+.dark .toggle .ball {
+    background: #fafafa;
+    transform: translateX(60px);
 }

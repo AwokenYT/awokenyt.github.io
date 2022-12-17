@@ -14,7 +14,7 @@
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
-<body>
+<body class="dark">
     <div class="sidebar">
         <div class="logo-details">
             <div class="logo_name">Echo's Games</div>
@@ -42,8 +42,17 @@
                 </a>
                 <span class="tooltip">Developer</span>
             </li>
+
         </ul>
     </div>
+
+    <label class="toggle" for="toggle">
+        <i class="bx bxs-sun"></i>
+        <i class="bx bx-moon"></i>
+        <span class="ball"></span>
+    </label>
+
+    <script type="text/javascript" src="/assets/js/toggle.js"></script>
     <script>
         let sidebar = document.querySelector(".sidebar");
         let closeBtn = document.querySelector("#btn");
